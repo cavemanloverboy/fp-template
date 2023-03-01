@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "console",    # runs a standardized cartridge
+    "cartridge",  # the cartridge standard
+    "cartridge1", # a cartridge impl
+    "cartridge2", # another cartridge impl
+]

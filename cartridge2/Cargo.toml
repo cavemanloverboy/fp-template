@@ -1,0 +1,19 @@
+[package]
+name = "cartridge2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+egui = { version = "0.20.1", features = ["persistence"] }
+fp-bindgen-support = { version = "2.4.0", features = ["async", "guest"] }
+once_cell = { version = "1.4" }
+rmp-serde = { version = "1.0" }
+serde = { version = "1.0", features = ["derive"] }
+
+[dependencies.cartridge-bindings]
+path = "../cartridge/bindings/rust-plugin"
